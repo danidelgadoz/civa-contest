@@ -1,0 +1,102 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  body .container {
+    display: flex;
+    position: relative;
+    max-height: 600px; }
+    body .container video {
+      max-height: 600px; }
+    body .container .chronometer {
+      position: absolute;
+      bottom: 40px;
+      width: 50%;
+      font-family: sans-serif;
+      transition: all 0.5s; }
+      body .container .chronometer .header {
+        color: #3f0950;
+        font-size: 14px;
+        font-weight: bolder;
+        text-align: center;
+        text-shadow: 0 0 2px #ab19da;
+        margin-bottom: 7px;
+        transition: all 0.5s; }
+      body .container .chronometer .time {
+        display: flex;
+        flex-direction: row;
+        justify-content: center; }
+        body .container .chronometer .time .counter-down {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin: 0 12px; }
+          body .container .chronometer .time .counter-down .box {
+            display: flex;
+            flex-direction: row; }
+            body .container .chronometer .time .counter-down .box .left, body .container .chronometer .time .counter-down .box .right {
+              position: relative;
+              background-color: #751195;
+              color: white;
+              font-size: 31px;
+              margin: 0 2px;
+              padding: 6px 8px;
+              border-radius: 10%;
+              box-shadow: 0 1px 0px 0 #d456ca, 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12);
+              text-shadow: 0 0 6px #d456ca;
+              transition: all 0.5s; }
+              body .container .chronometer .time .counter-down .box .left::before, body .container .chronometer .time .counter-down .box .right::before {
+                content: "";
+                display: block;
+                width: 100%;
+                height: 1px;
+                background-color: #751195;
+                position: absolute;
+                right: 0;
+                top: 48%;
+                transition: all 0.5s; }
+          body .container .chronometer .time .counter-down .description {
+            font-size: 8px;
+            color: #751195;
+            letter-spacing: 0.75px;
+            text-shadow: 0 0 2px #d456ca;
+            margin-top: 10px;
+            transition: all 0.5s; }
+      body .container .chronometer.ending {
+        width: 100%;
+        bottom: 48px; }
+        body .container .chronometer.ending .header {
+          color: white;
+          font-size: 30px;
+          text-shadow: 0 0 12px #630e7e, 0 0 16px #741d6d;
+          margin-bottom: 10px; }
+        body .container .chronometer.ending .time .counter-down {
+          margin: 0 24px; }
+          body .container .chronometer.ending .time .counter-down .box .left, body .container .chronometer.ending .time .counter-down .box .right {
+            font-size: 64px;
+            margin: 0 4px;
+            padding: 12px 16px;
+            box-shadow: 0 2px 0px 0 #d456ca, 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12); }
+            body .container .chronometer.ending .time .counter-down .box .left::before, body .container .chronometer.ending .time .counter-down .box .right::before {
+              height: 2px; }
+          body .container .chronometer.ending .time .counter-down .description {
+            font-size: 15px;
+            margin-top: 24px; }
+      body .container .chronometer.hidden .header {
+        color: transparent;
+        text-shadow: none; }
+      body .container .chronometer.hidden .time .counter-down .box .left, body .container .chronometer.hidden .time .counter-down .box .right {
+        background-color: transparent;
+        color: transparent;
+        text-shadow: none;
+        box-shadow: none; }
+        body .container .chronometer.hidden .time .counter-down .box .left::before, body .container .chronometer.hidden .time .counter-down .box .right::before {
+          background-color: transparent; }
+      body .container .chronometer.hidden .time .counter-down .description {
+        color: transparent;
+        text-shadow: none; }
+
+/*# sourceMappingURL=styles.css.map */
